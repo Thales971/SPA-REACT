@@ -1,13 +1,13 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Home from './pages/Home';
-import NotFound from './pages/NotFound';
-import Products from './pages/Products';
-import Team from './pages/Team';
+import Footer from './components/Footer/Footer.jsx';
+import Header from './components/Header/Header.jsx';
+import About from './pages/About/About.jsx';
+import Contact from './pages/Contact/Contact.jsx';
+import Home from './pages/Home/Home.jsx';
+import NotFound from './pages/NotFound/NotFound.jsx';
+import Products from './pages/Product/Products.jsx';
+import Team from './pages/Team/Team.jsx';
 
 function App() {
     return (

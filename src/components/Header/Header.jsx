@@ -1,12 +1,14 @@
 import { Link } from 'react-router-dom';
-import './components.css';
+import './Header.css';
 
 export default function Header() {
     return (
         <header className='site-header'>
-            <div className='wrap'>
-                <h1 className='brand'>PokéShop</h1>
-                <nav>
+            <div className='header-inner'>
+                <Link to='/' className='brand'>
+                    PokéShop
+                </Link>
+                <nav className='site-nav' aria-label='Navegação principal'>
                     <Link to='/'>Home</Link>
                     <Link to='/about'>Sobre</Link>
                     <Link to='/products'>Produtos</Link>

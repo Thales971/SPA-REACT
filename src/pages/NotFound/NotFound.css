@@ -1,0 +1,68 @@
+.not-found-page {
+    min-height: calc(100svh - 280px);
+    display: grid;
+    place-items: center;
+}
+
+.not-found-card {
+    width: min(100%, 560px);
+    display: grid;
+    gap: 12px;
+    padding: 32px;
+    text-align: center;
+    border: 1px solid var(--border);
+    border-radius: 28px;
+    background:
+        radial-gradient(circle at top, var(--code-bg), transparent 44%),
+        linear-gradient(135deg, var(--accent-bg), rgba(245, 158, 11, 0.12));
+    box-shadow: var(--shadow);
+}
+
+.not-found-code {
+    margin: 0;
+    font-size: clamp(4rem, 10vw, 6.5rem);
+    line-height: 1;
+    letter-spacing: -0.08em;
+    color: var(--accent);
+    font-weight: 800;
+}
+
+.not-found-card h1,
+.not-found-card p {
+    margin: 0;
+}
+
+.not-found-card p:last-of-type {
+    color: var(--text);
+    line-height: 1.65;
+}
+
+.not-found-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.not-found-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 999px;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease;
+}
+
+.not-found-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 16px 30px -18px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 720px) {
+    .not-found-card {
+        padding: 24px;
+    }
+}

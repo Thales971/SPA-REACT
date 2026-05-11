@@ -1,4 +1,5 @@
-import Card from '../components/Card';
+import Card from '../../components/Card/Card.jsx';
+import './Products.css';
 
 const items = [
     { title: 'Pikachu Plush', desc: 'Pelúcia macia do Pikachu, ideal para colecionar.' },
@@ -9,11 +10,14 @@ const items = [
 
 export default function Products() {
     return (
-        <section>
-            <h1>Produtos</h1>
-            <p>Veja alguns dos produtos disponíveis na loja.</p>
+        <section className='products-page'>
+            <div className='products-hero'>
+                <p className='eyebrow'>Catálogo oficial</p>
+                <h1>Produtos</h1>
+                <p>Veja alguns dos produtos disponíveis na loja.</p>
+            </div>
 
-            <div className='cards-grid'>
+            <div className='products-grid'>
                 {items.map((it) => (
                     <Card key={it.title} title={it.title}>
                         {it.desc}
