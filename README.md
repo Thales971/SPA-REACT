@@ -1,16 +1,63 @@
-# React + Vite
+# SPA-REACT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto Single Page Application (SPA) simples criado com React e Vite.
 
-Currently, two official plugins are available:
+Descrição
+-
+Este repositório contém uma SPA em React estruturada para aprendizado e prototipagem. Usa Vite para desenvolvimento com hot-reload e uma configuração mínima de ESLint.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Tecnologias
+-
+- React
+- Vite
+- CSS (arquivos simples em `src`)
 
-## React Compiler
+Como executar (desenvolvimento)
+-
+1. Instale as dependências:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+	```bash
+	npm install
+	```
 
-## Expanding the ESLint configuration
+2. Inicie o servidor de desenvolvimento:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+	```bash
+	npm run dev
+	```
+
+Scripts úteis
+-
+- `npm run dev` — inicia o servidor de desenvolvimento (Vite).
+- `npm run build` — gera a build de produção em `dist/`.
+- `npm run preview` — pré-visualiza a build gerada localmente.
+
+Estrutura principal do projeto
+-
+- `index.html` — entrada HTML.
+- `src/main.jsx` — ponto de entrada do React.
+- `src/App.jsx` — componente raiz.
+- `src/pages/` — páginas (Home, About, Contact, Products, Team, NotFound).
+- `src/components/` — componentes reutilizáveis (Header, Footer, Card).
+- `public/` — ativos públicos.
+
+Boas práticas
+-
+- Edite componentes em `src/components/` e páginas em `src/pages/`.
+- Mantenha estilos locais em arquivos `*.css` ao lado dos componentes.
+
+Contribuição
+-
+Pull requests são bem-vindas. Para contribuições:
+
+1. Faça um fork do projeto.
+2. Crie uma branch com sua feature: `git checkout -b feature/nome-da-feature`.
+3. Abra um pull request descrevendo a mudança.
+
+Licença
+-
+Este projeto está sem licença especificada — adicione um arquivo `LICENSE` se quiser usar uma licença permissiva.
+
+Autor
+-
+Criado pelo time/usuário local para fins de estudo e demonstração.
