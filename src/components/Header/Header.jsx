@@ -6,6 +6,11 @@ export default function Header() {
         <header className='site-header'>
             <div className='header-inner'>
                 <Link to='/' className='brand'>
+                    <img
+                        src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ_PGqMeIrhVUaDZZ82pnllAQYicSwuh14LQ&s'
+                        alt='PokéShop Logo'
+                        className='logo-img'
+                    />
                     PokéShop
                 </Link>
                 <nav className='site-nav' aria-label='Navegação principal'>

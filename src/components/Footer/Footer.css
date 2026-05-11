@@ -1,6 +1,7 @@
 .site-footer {
-    border-top: 1px solid var(--border);
-    background: var(--bg);
+    border-top: 3px solid var(--primary);
+    background: linear-gradient(90deg, #ffffff 0%, #f0f4ff 100%);
+    box-shadow: 0 -2px 8px rgba(0, 81, 186, 0.1);
 }
 
 .footer-inner {
@@ -13,8 +14,9 @@
     margin: 0 auto;
     padding: 18px 16px 22px;
     box-sizing: border-box;
-    color: var(--text);
+    color: var(--primary);
     font-size: 15px;
+    font-weight: 600;
 }
 
 @media (max-width: 820px) {

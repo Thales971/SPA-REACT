@@ -1,6 +1,7 @@
 .site-header {
-    border-bottom: 1px solid var(--border);
-    background: var(--bg);
+    border-bottom: 3px solid var(--primary);
+    background: linear-gradient(90deg, #ffffff 0%, #f0f4ff 100%);
+    box-shadow: 0 2px 8px rgba(0, 81, 186, 0.1);
 }
 
 .header-inner {
@@ -16,17 +17,31 @@
 }
 
 .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-family: var(--heading);
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 700;
     letter-spacing: -0.04em;
-    color: var(--text-h);
+    background: linear-gradient(135deg, var(--primary) 0%, #1a47a0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     text-decoration: none;
     white-space: nowrap;
+    transition: transform 180ms ease;
+}
+
+.logo-img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    -webkit-text-fill-color: unset;
 }
 
 .brand:hover {
-    color: var(--accent);
+    transform: scale(1.05);
 }
 
 .site-nav {
@@ -37,20 +52,23 @@
 }
 
 .site-nav a {
-    padding: 9px 14px;
+    padding: 9px 16px;
     border-radius: 999px;
-    color: var(--text);
+    color: var(--primary);
     text-decoration: none;
+    font-weight: 600;
     transition:
         background-color 180ms ease,
         color 180ms ease,
         transform 180ms ease;
+    border: 2px solid transparent;
 }
 
 .site-nav a:hover {
     background: var(--accent-bg);
-    color: var(--text-h);
-    transform: translateY(-1px);
+    color: var(--primary-dark);
+    border-color: var(--accent);
+    transform: translateY(-2px);
 }
 
 @media (max-width: 820px) {

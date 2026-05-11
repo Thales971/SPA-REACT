@@ -7,13 +7,12 @@
 .home-hero {
     display: grid;
     gap: 10px;
-    padding: 28px;
-    border: 1px solid var(--border);
-    border-radius: 28px;
-    background:
-        radial-gradient(circle at top right, var(--code-bg), transparent 42%),
-        linear-gradient(135deg, var(--accent-bg), rgba(245, 158, 11, 0.14));
-    box-shadow: var(--shadow);
+    padding: 40px;
+    border: 3px solid var(--primary);
+    border-radius: 24px;
+    background: linear-gradient(135deg, var(--primary) 0%, #1a47a0 100%);
+    color: white;
+    box-shadow: 0 8px 24px rgba(0, 81, 186, 0.3);
 }
 
 .eyebrow {
@@ -27,6 +26,12 @@
 
 .home-hero h1 {
     margin: 0;
+    color: white;
+    font-size: 48px;
+}
+
+.home-hero p {
+    color: rgba(255, 255, 255, 0.95);
 }
 
 .home-hero p:last-child {
@@ -35,16 +40,16 @@
 
 .home-cards {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
 }
 
 @media (max-width: 900px) {
     .home-hero {
-        padding: 22px;
+        padding: 28px;
     }
 
     .home-cards {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     }
 }

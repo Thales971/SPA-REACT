@@ -49,6 +49,18 @@
     border-radius: 24px;
     background: var(--code-bg);
     box-shadow: var(--shadow);
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease,
+        border-color 180ms ease,
+        background-color 180ms ease;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary);
+    background: linear-gradient(180deg, rgba(0, 81, 186, 0.03), var(--code-bg));
+    box-shadow: 0 14px 36px rgba(0, 81, 186, 0.16);
 }
 
 .team-role {
